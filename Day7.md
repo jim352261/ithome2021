@@ -10,7 +10,7 @@
 在這邊會介紹三種官方推薦的k8s，Kind Minikube以及Kubeadm：
 
 ### Kind
-Kind是什麼，
+Kind是什麼，絕對不是仁慈或和藹可親，
 
 ### MiniKube
 
