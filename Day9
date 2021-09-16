@@ -1,0 +1,45 @@
+kind指令介紹
+在上一章我們介紹了如何安裝kind,既然安裝完了,那就該知道kind支援哪些指令.
+在command line上輸入kind,就可以看到他列出可用指令:
+(指令圖片)
+
+接下來會介紹幾個常用的指令.
+
+## kind create
+在前一章有用來測試kind是否有正常運作,不過不只有這個功能
+
+```
+kind create cluster
+```
+這會產生一個名稱為kind的cluster,而你也可以指定cluster的名稱,像下面範例這樣
+
+```
+kind create cluster --name kind-2
+```
+這樣就可以指定cluster名稱.
+
+### 查看cluster
+
+那麼要查看目前有哪些cluster,則可以使用下面的指令
+```
+kind get clusters
+```
+他就會顯示你目前產生的cluster.
+
+### 刪除cluster
+
+當你發現不需要這麼多cluster時,可以透過下面指令刪除cluster
+
+```
+kind delete cluster
+```
+沒有加上 --name的話,就會刪除預設context 名稱,也就是叫做 kind的cluster,或是你可以像下面這樣加上--name
+
+```
+kind delete cluster --name kind-2
+```
+就可以刪除kind-2名稱的cluster
+
+
+
+
